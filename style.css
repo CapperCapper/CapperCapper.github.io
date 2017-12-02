@@ -1,0 +1,57 @@
+body {
+    background-color: #fff;
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: 300;
+}
+
+header {
+    text-align: center;
+    background-color: #201527;
+    height: 280px;
+}
+
+h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 3em;
+    color: #dbb6b0;
+    font-weight: 900;
+    padding: 0.5em 0;
+    margin: 0;
+}
+
+h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.5em;
+    color: #dbb6b0;
+    font-style: italic;
+    padding: 0.5em 0;
+}
+
+/*GRID*/
+
+.flex-grid {
+    display: flex;
+}
+
+.col {
+    flex: 1;
+    padding: 1em;
+}
+
+.flex-grid-thirds {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-grid-thirds .col {
+    width: 32%;
+}
+
+@media (max-width: 400px) {
+    .flex-grid-thirds {
+        display: block;
+    }
+    .flex-grid-thirds .col {
+        width: 100%;
+    }
+}
